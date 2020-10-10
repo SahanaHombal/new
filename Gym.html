@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello fitness</title>
+   <link rel="stylesheet" href="https://fonts.google.com/specimen/Baloo+Bhai+2?query=baloo">
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('images/background.jpg');
+    }
+
+    .left {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        display: inline-block;
+        /*border: 2px solid brown;*/
+    }
+
+    .left img {
+        width: 80px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 36%;
+        margin: 20px auto;
+        /*border: 2px solid green;*/
+        font-size: 20px;
+    }
+
+    .right {
+        position: absolute;
+        right: 14px;
+        top: 34px;
+        display: inline-block;
+       /* border: 2px solid red;*/
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: black;
+        text-decoration: none;
+        padding: 25px 10px;
+        font-size: 18px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: cornflowerblue;
+
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: white;
+        padding: 4px 14px;
+        border: 3px solid gray;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+
+    .container {
+    border-right: 3px solid rgba(54, 44, 44, 0.979);
+    margin: 80px 60px;
+    padding: 20px 20px;
+    width: 30%;
+    border-top-style: ridge;
+    
+    }
+    .group input{
+     text-align: center;
+     display: block;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+           <img src="images/gym logo.jpg" alt="logo">
+            <div> Hello Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li> <a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#"> Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now </button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym</h1>
+        <form action="reaction.php">
+         <div class="group">
+             <input type="text" name="" placeholder="Enter your name " required>
+             <br>
+             Select The Timing Sections
+                <select>
+                     <option>Morning</option>
+                    <option>Evening</option>
+                </select>
+                <br>
+                <br>
+             <input type="text" name="" placeholder="Enter your Age" required>
+            <br>
+         </div>
+        </form>
+        <button class="btn">Submit</button>
+    </div>
+</body>
+
+</html>
